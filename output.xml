@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_51)" generated="20170727 18:02:59.732">
+<suite source="C:\dev\prototypes\robot-prototype\mytests.txt" name="Mytests" id="s1">
+<test name="MyTestCase" id="s1-t1">
+<kw library="com.successfactors.MyKeywords" name="Say Hi">
+<assign>
+<var>${message}</var>
+</assign>
+<msg level="INFO" timestamp="20170727 18:03:00.104">${message} = Hello World!</msg>
+<status endtime="20170727 18:03:00.107" starttime="20170727 18:03:00.098" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170727 18:03:00.115">Hello World!</msg>
+<status endtime="20170727 18:03:00.117" starttime="20170727 18:03:00.111" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170727 18:03:00.120" starttime="20170727 18:03:00.086" status="PASS"></status>
+</test>
+<test name="MyTestCase2" id="s1-t2">
+<kw library="com.successfactors.MyKeywords" name="Say Hi">
+<arguments>
+<arg>Valerio</arg>
+</arguments>
+<assign>
+<var>${message}</var>
+</assign>
+<msg level="INFO" timestamp="20170727 18:03:00.149">${message} = Hello Valerio</msg>
+<status endtime="20170727 18:03:00.150" starttime="20170727 18:03:00.144" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170727 18:03:00.156">Hello Valerio</msg>
+<status endtime="20170727 18:03:00.158" starttime="20170727 18:03:00.153" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170727 18:03:00.160" starttime="20170727 18:03:00.135" status="PASS"></status>
+</test>
+<test name="MyTestCase3" id="s1-t3">
+<kw library="com.successfactors.MyKeywords" name="Type Of">
+<arguments>
+<arg>42</arg>
+</arguments>
+<assign>
+<var>${message}</var>
+</assign>
+<msg level="INFO" timestamp="20170727 18:03:00.186">${message} = String</msg>
+<status endtime="20170727 18:03:00.187" starttime="20170727 18:03:00.181" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170727 18:03:00.194">String</msg>
+<status endtime="20170727 18:03:00.196" starttime="20170727 18:03:00.189" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170727 18:03:00.199" starttime="20170727 18:03:00.168" status="PASS"></status>
+</test>
+<status endtime="20170727 18:03:00.208" starttime="20170727 18:02:59.749" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" name="Mytests" id="s1">Mytests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

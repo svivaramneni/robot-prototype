@@ -1,0 +1,15 @@
+*** Settings ***
+Library           com.successfactors.MyKeywords
+
+*** Test Cases ***
+MyTestCase
+    ${message}    say hi
+    Log    ${message}
+
+MyTestCase2
+    ${message}    say hi    Valerio
+    Log    ${message}
+
+MyTestCase3
+    ${message}    type of    42
+    Log    ${message}
