@@ -1,0 +1,13 @@
+*** Settings ***
+Resource        resources/resource1.txt
+Library         com.successfactors.PrintMessageKeyword
+
+*** Test Cases ***
+Test Robot Framework Logging
+    Log    "Test Logging"
+
+Test My Logging
+    My Logging   "Test My Logging 1"   "Test My Logging 2"
+
+Test My Print Message
+    Print Message    "Hello Sridhar"

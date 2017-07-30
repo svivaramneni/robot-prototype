@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_51)" generated="20170727 18:02:59.732">
-<suite source="C:\dev\prototypes\robot-prototype\mytests.txt" name="Mytests" id="s1">
-<test name="MyTestCase" id="s1-t1">
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_51)" generated="20170730 01:00:24.702">
+<suite name="myFirstTest &amp; myKeywordLoggingTest &amp; randomStringTest" id="s1">
+<suite source="C:\dev\prototypes\robot-prototype\tests\myFirstTest.txt" name="myFirstTest" id="s1-s1">
+<test name="MyTestCase" id="s1-s1-t1">
 <kw library="com.successfactors.MyKeywords" name="Say Hi">
 <assign>
 <var>${message}</var>
 </assign>
-<msg level="INFO" timestamp="20170727 18:03:00.104">${message} = Hello World!</msg>
-<status endtime="20170727 18:03:00.107" starttime="20170727 18:03:00.098" status="PASS"></status>
+<msg level="INFO" timestamp="20170730 01:00:25.020">${message} = Hello World!</msg>
+<status endtime="20170730 01:00:25.021" starttime="20170730 01:00:25.015" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${message}</arg>
 </arguments>
-<msg level="INFO" timestamp="20170727 18:03:00.115">Hello World!</msg>
-<status endtime="20170727 18:03:00.117" starttime="20170727 18:03:00.111" status="PASS"></status>
+<msg level="INFO" timestamp="20170730 01:00:25.028">Hello World!</msg>
+<status endtime="20170730 01:00:25.030" starttime="20170730 01:00:25.024" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20170727 18:03:00.120" starttime="20170727 18:03:00.086" status="PASS"></status>
+<status critical="yes" endtime="20170730 01:00:25.033" starttime="20170730 01:00:25.010" status="PASS"></status>
 </test>
-<test name="MyTestCase2" id="s1-t2">
+<test name="MyTestCase2" id="s1-s1-t2">
 <kw library="com.successfactors.MyKeywords" name="Say Hi">
 <arguments>
 <arg>Valerio</arg>
@@ -27,20 +28,20 @@
 <assign>
 <var>${message}</var>
 </assign>
-<msg level="INFO" timestamp="20170727 18:03:00.149">${message} = Hello Valerio</msg>
-<status endtime="20170727 18:03:00.150" starttime="20170727 18:03:00.144" status="PASS"></status>
+<msg level="INFO" timestamp="20170730 01:00:25.063">${message} = Hello Valerio</msg>
+<status endtime="20170730 01:00:25.064" starttime="20170730 01:00:25.057" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${message}</arg>
 </arguments>
-<msg level="INFO" timestamp="20170727 18:03:00.156">Hello Valerio</msg>
-<status endtime="20170727 18:03:00.158" starttime="20170727 18:03:00.153" status="PASS"></status>
+<msg level="INFO" timestamp="20170730 01:00:25.071">Hello Valerio</msg>
+<status endtime="20170730 01:00:25.072" starttime="20170730 01:00:25.067" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20170727 18:03:00.160" starttime="20170727 18:03:00.135" status="PASS"></status>
+<status critical="yes" endtime="20170730 01:00:25.074" starttime="20170730 01:00:25.052" status="PASS"></status>
 </test>
-<test name="MyTestCase3" id="s1-t3">
+<test name="MyTestCase3" id="s1-s1-t3">
 <kw library="com.successfactors.MyKeywords" name="Type Of">
 <arguments>
 <arg>42</arg>
@@ -48,30 +49,175 @@
 <assign>
 <var>${message}</var>
 </assign>
-<msg level="INFO" timestamp="20170727 18:03:00.186">${message} = String</msg>
-<status endtime="20170727 18:03:00.187" starttime="20170727 18:03:00.181" status="PASS"></status>
+<msg level="INFO" timestamp="20170730 01:00:25.098">${message} = String</msg>
+<status endtime="20170730 01:00:25.100" starttime="20170730 01:00:25.094" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${message}</arg>
 </arguments>
-<msg level="INFO" timestamp="20170727 18:03:00.194">String</msg>
-<status endtime="20170727 18:03:00.196" starttime="20170727 18:03:00.189" status="PASS"></status>
+<msg level="INFO" timestamp="20170730 01:00:25.107">String</msg>
+<status endtime="20170730 01:00:25.108" starttime="20170730 01:00:25.102" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20170727 18:03:00.199" starttime="20170727 18:03:00.168" status="PASS"></status>
+<status critical="yes" endtime="20170730 01:00:25.111" starttime="20170730 01:00:25.088" status="PASS"></status>
 </test>
-<status endtime="20170727 18:03:00.208" starttime="20170727 18:02:59.749" status="PASS"></status>
+<status endtime="20170730 01:00:25.131" starttime="20170730 01:00:24.956" status="PASS"></status>
+</suite>
+<suite source="C:\dev\prototypes\robot-prototype\tests\myKeywordLoggingTest.txt" name="myKeywordLoggingTest" id="s1-s2">
+<test name="Test Robot Framework Logging" id="s1-s2-t1">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Test Logging"</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.217">"Test Logging"</msg>
+<status endtime="20170730 01:00:25.219" starttime="20170730 01:00:25.213" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170730 01:00:25.221" starttime="20170730 01:00:25.207" status="PASS"></status>
+</test>
+<test name="Test My Logging" id="s1-s2-t2">
+<kw library="resource1" name="My Logging">
+<arguments>
+<arg>"Test My Logging 1"</arg>
+<arg>"Test My Logging 2"</arg>
+</arguments>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{arg}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.248">"Test My Logging 1"</msg>
+<msg level="INFO" timestamp="20170730 01:00:25.250">"Test My Logging 2"</msg>
+<status endtime="20170730 01:00:25.251" starttime="20170730 01:00:25.244" status="PASS"></status>
+</kw>
+<status endtime="20170730 01:00:25.252" starttime="20170730 01:00:25.240" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170730 01:00:25.255" starttime="20170730 01:00:25.232" status="PASS"></status>
+</test>
+<test name="Test My Print Message" id="s1-s2-t3">
+<kw library="com.successfactors.PrintMessageKeyword" name="Print Message">
+<arguments>
+<arg>"Hello Sridhar"</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.281">"Hello Sridhar"</msg>
+<status endtime="20170730 01:00:25.282" starttime="20170730 01:00:25.277" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170730 01:00:25.284" starttime="20170730 01:00:25.270" status="PASS"></status>
+</test>
+<status endtime="20170730 01:00:25.300" starttime="20170730 01:00:25.154" status="PASS"></status>
+</suite>
+<suite source="C:\dev\prototypes\robot-prototype\tests\randomStringTest.txt" name="randomStringTest" id="s1-s3">
+<test name="Test Robot Framework Logging" id="s1-s3-t1">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Logging</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.415">Test Logging</msg>
+<status endtime="20170730 01:00:25.417" starttime="20170730 01:00:25.412" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>First Entry</arg>
+<arg>Second Entry</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.423">First Entry</msg>
+<msg level="INFO" timestamp="20170730 01:00:25.424">Second Entry</msg>
+<status endtime="20170730 01:00:25.425" starttime="20170730 01:00:25.419" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Display to console while Robot is running</arg>
+</arguments>
+<status endtime="20170730 01:00:25.435" starttime="20170730 01:00:25.428" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170730 01:00:25.438" starttime="20170730 01:00:25.404" status="PASS"></status>
+</test>
+<test name="Test For Loop" id="s1-s3-t2">
+<kw type="for" name="${INDEX} IN RANGE [ 1 | 3 ]">
+<kw type="foritem" name="${INDEX} = 1">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${INDEX}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.475">1</msg>
+<status endtime="20170730 01:00:25.477" starttime="20170730 01:00:25.472" status="PASS"></status>
+</kw>
+<kw library="String" name="Generate Random String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${INDEX}</arg>
+</arguments>
+<assign>
+<var>${RANDOM_STRING}</var>
+</assign>
+<msg level="INFO" timestamp="20170730 01:00:25.483">${RANDOM_STRING} = 8</msg>
+<status endtime="20170730 01:00:25.485" starttime="20170730 01:00:25.478" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${RANDOM_STRING}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.490">8</msg>
+<status endtime="20170730 01:00:25.492" starttime="20170730 01:00:25.486" status="PASS"></status>
+</kw>
+<status endtime="20170730 01:00:25.493" starttime="20170730 01:00:25.471" status="PASS"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 2">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${INDEX}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.498">2</msg>
+<status endtime="20170730 01:00:25.500" starttime="20170730 01:00:25.495" status="PASS"></status>
+</kw>
+<kw library="String" name="Generate Random String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${INDEX}</arg>
+</arguments>
+<assign>
+<var>${RANDOM_STRING}</var>
+</assign>
+<msg level="INFO" timestamp="20170730 01:00:25.505">${RANDOM_STRING} = f8</msg>
+<status endtime="20170730 01:00:25.507" starttime="20170730 01:00:25.501" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${RANDOM_STRING}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170730 01:00:25.511">f8</msg>
+<status endtime="20170730 01:00:25.512" starttime="20170730 01:00:25.508" status="PASS"></status>
+</kw>
+<status endtime="20170730 01:00:25.513" starttime="20170730 01:00:25.494" status="PASS"></status>
+</kw>
+<status endtime="20170730 01:00:25.514" starttime="20170730 01:00:25.463" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170730 01:00:25.516" starttime="20170730 01:00:25.454" status="PASS"></status>
+</test>
+<status endtime="20170730 01:00:25.533" starttime="20170730 01:00:25.323" status="PASS"></status>
+</suite>
+<status endtime="20170730 01:00:25.568" starttime="20170730 01:00:24.711" status="PASS"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="8" fail="0">Critical Tests</stat>
+<stat pass="8" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" name="Mytests" id="s1">Mytests</stat>
+<stat pass="8" fail="0" name="myFirstTest &amp; myKeywordLoggingTest &amp; randomStringTest" id="s1">myFirstTest &amp; myKeywordLoggingTest &amp; randomStringTest</stat>
+<stat pass="3" fail="0" name="myFirstTest" id="s1-s1">myFirstTest &amp; myKeywordLoggingTest &amp; randomStringTest.myFirstTest</stat>
+<stat pass="3" fail="0" name="myKeywordLoggingTest" id="s1-s2">myFirstTest &amp; myKeywordLoggingTest &amp; randomStringTest.myKeywordLoggingTest</stat>
+<stat pass="2" fail="0" name="randomStringTest" id="s1-s3">myFirstTest &amp; myKeywordLoggingTest &amp; randomStringTest.randomStringTest</stat>
 </suite>
 </statistics>
 <errors>
